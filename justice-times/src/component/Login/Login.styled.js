@@ -40,5 +40,6 @@ export const Submit = styled(TrueButtonStyled)`
 export const Help = styled.div`
   font-family: IBM Plex Sans, sans-serif;
   font-weight: 400;
-  
+  font-size: 16px;
+	line-height: 16px;
 `

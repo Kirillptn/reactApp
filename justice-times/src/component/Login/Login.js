@@ -11,7 +11,6 @@ export const Login = () => {
               <Label>Password</Label>
               <Input/>
               <Submit isblack = {true}>Log In</Submit>
-
           </Form>
       </LoginStyled>
   )
