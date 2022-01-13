@@ -9,21 +9,18 @@ import { MainStyled } from "./Main.styled";
 
 
 export const Main = () => {
-  return(
-      <MainStyled>
-          <Wrapper>
-              <Routes>
-                  <Route path='/login' element={<Login />} />
-                  <Route path='/' element={<AllArticle/>} />
-                  <Route path='/sign-in' element={<SignIn/>}/>
-              </Routes>
+	return (
+		<MainStyled>
+			<Wrapper>
+				<Routes>
+					<Route path="/login" element={<Login/>}/>
+					<Route path="/" element={<AllArticle/>}/>
+					<Route path="/sign-in" element={<SignIn/>}/>
+				</Routes>
 
 
-
-
-
-          </Wrapper>
-      </MainStyled>
-  )
+			</Wrapper>
+		</MainStyled>
+	)
 
 }

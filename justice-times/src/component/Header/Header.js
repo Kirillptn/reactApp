@@ -8,11 +8,11 @@ import { StyledHeader } from "./Header.styles";
 
 export const Header = () => {
 
-  return (
-      <StyledHeader>
-          <Wrapper>
-              <NavWrap logo = {logo}/>
-          </Wrapper>
-      </StyledHeader>
-  )
+	return (
+		<StyledHeader>
+			<Wrapper>
+				<NavWrap logo={logo}/>
+			</Wrapper>
+		</StyledHeader>
+	)
 }
