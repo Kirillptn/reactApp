@@ -1,4 +1,4 @@
-import {LogoLink} from "./Logo.styles";
+import { LogoLink } from "./Logo.styles";
 
 export const Logo = (props) => {
     return(

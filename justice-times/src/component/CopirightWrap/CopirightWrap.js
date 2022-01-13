@@ -1,4 +1,4 @@
-import {Copiright, CopirightWrapStyled} from "./CopirightWrap.styled";
+import { Copiright, CopirightWrapStyled } from "./CopirightWrap.styled";
 
 export const CopirightWrap = () => {
   return(

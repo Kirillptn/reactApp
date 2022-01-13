@@ -1,5 +1,5 @@
 import React from "react";
-import {Form, Input, Label, LoginStyled, Submit, Title} from "./Login.styled";
+import { Form, Input, Label, LoginStyled, Submit, Title } from "./Login.styled";
 
 export const Login = () => {
   return (

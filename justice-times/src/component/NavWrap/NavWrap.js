@@ -1,7 +1,7 @@
-import {Logo} from "./Logo";
-import {NavList} from "./NavList";
+import { Logo } from "./Logo";
+import { NavList } from "./NavList";
 import React from "react";
-import {NavWrapStyles} from "./NavWrap.styles";
+import { NavWrapStyles } from "./NavWrap.styles";
 
 export const NavWrap = (props) => {
   return(

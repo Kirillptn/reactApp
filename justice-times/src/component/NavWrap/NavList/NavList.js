@@ -1,5 +1,5 @@
-import {StyledNavList} from "./NavList.styles";
-import {Button} from "../../Button";
+import { StyledNavList } from "./NavList.styles";
+import { Button } from "../../Button";
 
 export const NavList = (props) => {
     return(

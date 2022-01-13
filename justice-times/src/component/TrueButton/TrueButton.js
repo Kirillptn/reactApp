@@ -1,10 +1,8 @@
 import React from 'react';
-import {TrueButtonStyled} from "./TrueButton.styled";
+import { TrueButtonStyled } from "./TrueButton.styled";
 
-function TrueButton() {
+export function TrueButton() {
     return (
         <TrueButtonStyled/>
     );
 }
-
-export default TrueButton;

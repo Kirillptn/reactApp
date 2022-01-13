@@ -1,4 +1,4 @@
-import {StyledButton} from "./Button.styles";
+import { StyledButton } from "./Button.styles";
 
 export const Button = ({ link, isblack, children }) => {
   return(

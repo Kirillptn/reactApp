@@ -1,5 +1,7 @@
 import React from "react";
-import {ArticleCard} from "./ArticleCard";
+
+import { ArticleCard } from "./ArticleCard";
+
 import articleImg from '../../assets/images/articleImg/image 15.png'
 import authorImg from '../../assets/images/autorImg/author-img.png'
 import {ArticleList, Title} from "./AllArticle.styled";

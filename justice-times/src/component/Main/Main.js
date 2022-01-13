@@ -1,10 +1,11 @@
-import {Routes, Route} from "react-router-dom";
-import {Wrapper} from "../Wrapper";
-import {Login} from "../Login";
-import {Signin} from "../Signin";
-import {AllArticle} from "../AllArticle";
+import { Routes, Route } from "react-router-dom";
 
-import {MainStyled} from "./Main.styled";
+import { Wrapper } from "../Wrapper";
+import { Login } from "../Login";
+import { Signin } from "../Signin";
+import { AllArticle } from "../AllArticle";
+
+import { MainStyled } from "./Main.styled";
 
 
 export const Main = () => {
