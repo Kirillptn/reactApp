@@ -6,6 +6,7 @@ import { SignIn } from "../SignIn";
 import { AllArticle } from "../AllArticle";
 
 import { MainStyled } from "./Main.styled";
+import { AuthorPage } from '../AuthorPage';
 
 
 export const Main = () => {
@@ -14,11 +15,10 @@ export const Main = () => {
 			<Wrapper>
 				<Routes>
 					<Route path="/login" element={<Login/>}/>
-					<Route path="/" element={<AllArticle/>}/>
 					<Route path="/sign-in" element={<SignIn/>}/>
+					<Route path="/" element={<AllArticle/>}/>
+					<Route path="/author" element={AuthorPage}/>
 				</Routes>
-
-
 			</Wrapper>
 		</MainStyled>
 	)

@@ -12,16 +12,23 @@ import {
 	ViewsCount,
 } from "./ArticleCard.styled";
 
-export const ArticleCard = ({
-															views, date, authorName,
-															text, authorImg, mainImg,
-															tag, title,
-														}) => (
-	<ArticleCardStyled>
-		<ArticleImg src={mainImg}/>
+export const ArticleCard = (
+	{
+		main,
+		views,
+		date,
+		authorName,
+		text,
+		authorImg,
+		mainImg,
+		tag,
+		title,
+	}) => (
+	<ArticleCardStyled main={main}>
+		<ArticleImg main={main} src={mainImg}/>
 		<ArticleDisc>
 			<ArticleTag>{tag}</ArticleTag>
-			<ArticleTitle>{title}</ArticleTitle>
+			<ArticleTitle main={main}>{title}</ArticleTitle>
 			<ArticlePrev>{text}</ArticlePrev>
 			<ArticleInfo>
 				<AuthorImg src={authorImg}/>
