@@ -3,15 +3,27 @@ import eyeIco from '../../../assets/images/eye-icon.svg'
 
 export const ArticleCardStyled = styled.section`
   width: 100%;
-	${props => props.main ? 'height: 397px;' : 'height: 260px;'}
   display: flex;
-  flex-direction: row;
+  ${props => props.my ? 'flex-direction: column; margin-bottom: 58px;' : 'flex-direction: row; justify-content: space-between;'};
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+`
+export const ImgWrap = styled.div`
+  width: 34%;
+  ${props => props.my ? 'margin-bottom: 32px; width: 100%' : 'margin-right: 24px;'};
+  ${props => props.main ? 'width: 54%; height 37%;' : ''};
 `
 export const ArticleImg = styled.img`
-	${ props => props.main ? 'width: 582px; height: 397px;' : 'width: 367px; height: 260px;'}
-  margin-right: 24px;
+  width: 100%;
+  height: 100%;
 `
-export const ArticleDisc = styled.div``
+export const ArticleDesc = styled.div`
+  width: 63.5%;
+  ${props => props.main ? 'width: 43.3%;' : ''}
+  ${props => props.my ? 'width: 100%;' : ''}
+`
 export const ArticleTag = styled.div`
   margin-bottom: 24px;
   font-family: Inter, sans-serif;
@@ -20,12 +32,13 @@ export const ArticleTag = styled.div`
   color: #8C8C8C;
 `
 export const ArticleTitle = styled.h2`
+  color: #242424;
   font-family: Playfair Display, sans-serif;
   font-weight: 700;
   font-size: 32px;
   margin: 0 0 16px 0;
   ${props => props.main ? 'line-height: 40px;' : 'line-height: 32px;'};
-	`
+`
 export const ArticlePrev = styled.div`
   color: #8C8C8C;
   font-family: IBM Plex Sans, sans-serif;

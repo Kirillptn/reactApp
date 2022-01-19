@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const TrueButtonStyled = styled.button`
+	width: auto;
   display: inline-block;
   cursor: pointer;
   border: 1px solid #242424;

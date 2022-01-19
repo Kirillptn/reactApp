@@ -11,7 +11,7 @@ export const NavList = styled.nav`
   line-height: 15px;
 `
 export const NavLinkStyled = styled(NavLink)`
-  color: inherit;
+	color: inherit;
   text-decoration: none;
   margin-right: 40px;
   transition: all ease-in .1s;

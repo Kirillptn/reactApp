@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button } from '../Button';
+
 import { NavLinkStyled, NavList } from './AuthorizedUserMenu.styled';
 import { linksToPages } from '../../mock';
+import { MyContext } from '../../App';
 
-export const AuthorizedUserMenu = (props) => {
+export const AuthorizedUserMenu = ({ isblack }) => {
+	const { setCurrentUser } = useContext(MyContext)
 	const logoutUser = () => {
-		props.setCurrentUser(null)
+		setCurrentUser(null)
 		localStorage.removeItem('user')
 	}
 
@@ -13,10 +16,15 @@ export const AuthorizedUserMenu = (props) => {
 		<NavList>
 			{
 				linksToPages.map((link) => {
-					return <NavLinkStyled isblack={props.isblack} key={link.name} to={link.path}>{link.name}</NavLinkStyled>
+					return <NavLinkStyled
+						className={({ isActive }) => isActive ? 'selected' : ''}
+						isblack={isblack}
+						key={link.name}
+						to={link.path}>{link.name}
+					</NavLinkStyled>
 				})
 			}
-			<Button clickFunc={logoutUser} activeClassName="selected" link="/login" isblack={true}>Logout</Button>
+			<Button clickFunc={logoutUser} link="/login" isblack={true}>Logout</Button>
 		</NavList>
 	)
 }

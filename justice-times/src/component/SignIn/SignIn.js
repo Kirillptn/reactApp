@@ -12,14 +12,17 @@ export const SignIn = () => {
 	const navigate = useNavigate()
 	const { currentUser } = useContext(MyContext)
 
-
-	const signInUser = (Data) => {
+	const signInHandler = (Data) => {
 		const key = 'usersLoginData'
 		const presentValue = JSON.parse(localStorage.getItem(key))
 		const rawData = Data;
-		rawData.id = Date.now();
 
-		if (presentValue.length) {
+		rawData.id = Date.now();
+		rawData.desc = '';
+		rawData.img = null;
+		console.log(rawData)
+
+		if (presentValue !== null) {
 			if (!presentValue.find(user => user.email === rawData.email)) {
 				presentValue.push(rawData)
 				localStorage.setItem(key, JSON.stringify(presentValue))
@@ -33,14 +36,14 @@ export const SignIn = () => {
 		}
 	}
 
-	if (currentUser){
+	if (currentUser) {
 		navigate('/')
 	}
 
 	return (
 		<SignInStyled>
 			<Title>Create your free account</Title>
-			<EnterForm submitFunc={signInUser} tempObj={tempSignIn} textBtn="Create Account" typeArr={inputsSignIn}/>
+			<EnterForm submitFunc={signInHandler} tempObj={tempSignIn} textBtn="Create Account" inputsArr={inputsSignIn}/>
 		</SignInStyled>
 	)
 }

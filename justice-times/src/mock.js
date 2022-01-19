@@ -48,7 +48,7 @@ export const tempSignIn = {
 
 export const linksToPages =[
 	{
-		path: '/all-articles',
+		path: '/',
 		name: 'All articles',
 	},
 	{
