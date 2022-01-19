@@ -2,7 +2,14 @@ import React, { useState } from 'react';
 
 import { Form, Input, InputWrap, Label, Submit } from './EnterForm.styled';
 
-export const EnterForm = ({ submitFunc, tempObj, typeArr, textBtn }) => {
+export const EnterForm = (
+	{
+		submitFunc,
+		tempObj,
+		inputsArr,
+		textBtn,
+	},
+) => {
 	const [ userLoginData, setUserLoginData ] = useState(tempObj)
 
 	const handleChange = (event) => {
@@ -20,10 +27,11 @@ export const EnterForm = ({ submitFunc, tempObj, typeArr, textBtn }) => {
 	return (
 		<Form>
 			{
-				typeArr.map((input) => (
+				inputsArr.map((input) => (
 					<InputWrap key={input.name}>
 						<Label>{input.label}</Label>
 						<Input
+							required={true}
 							onChange={handleChange}
 							type={input.type}
 							name={input.name}

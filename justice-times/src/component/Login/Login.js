@@ -34,7 +34,7 @@ export const Login = () => {
 				submitFunc={loginUser}
 				tempObj={tempLogin}
 				textBtn="Log in"
-				typeArr={inputsLogin}
+				inputsArr={inputsLogin}
 			/>
 			<Help>
 				Don’t have a Times account?

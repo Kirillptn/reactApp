@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Title = styled.h1`
-  margin: 96px 0 56px 0;
+  margin: 96px 0 56px;
   font-family: Playfair Display, sans-serif;
   font-weight: 700;
   font-size: 48px;
