@@ -11,7 +11,7 @@ export const Header = () => {
 	return (
 		<StyledHeader>
 			<Wrapper>
-				<NavWrap logo={logo}/>
+				<NavWrap isblack={false} logo={logo}/>
 			</Wrapper>
 		</StyledHeader>
 	)

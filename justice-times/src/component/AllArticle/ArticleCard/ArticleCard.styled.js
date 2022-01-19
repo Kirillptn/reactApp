@@ -3,13 +3,12 @@ import eyeIco from '../../../assets/images/eye-icon.svg'
 
 export const ArticleCardStyled = styled.section`
   width: 100%;
-  height: 260px;
+	${props => props.main ? 'height: 397px;' : 'height: 260px;'}
   display: flex;
   flex-direction: row;
 `
 export const ArticleImg = styled.img`
-  width: 367px;
-  height: 260px;
+	${ props => props.main ? 'width: 582px; height: 397px;' : 'width: 367px; height: 260px;'}
   margin-right: 24px;
 `
 export const ArticleDisc = styled.div``
@@ -24,12 +23,9 @@ export const ArticleTitle = styled.h2`
   font-family: Playfair Display, sans-serif;
   font-weight: 700;
   font-size: 32px;
-  line-height: 32px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin: 0 0 16px 0;
-`
+  ${props => props.main ? 'line-height: 40px;' : 'line-height: 32px;'};
+	`
 export const ArticlePrev = styled.div`
   color: #8C8C8C;
   font-family: IBM Plex Sans, sans-serif;
